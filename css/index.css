@@ -1,0 +1,39 @@
+/*头部开始  此处可以省略高度，因为子元素会把父元素撑大*/
+.J_event {
+    width: 100%;
+    background-color: #000000;
+}
+
+.J_event > a {
+    /*父相对定位*/
+    position: relative;
+    display: block;
+    height: 80px;
+    background: rgba(0, 0, 0, 1) url("../images/header.jpg") no-repeat;
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?i3ep97');
+    src: url('../fonts/icomoon.eot?i3ep97#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?i3ep97') format('truetype'),
+    url('../fonts/icomoon.woff?i3ep97') format('woff'),
+    url('../fonts/icomoon.svg?i3ep97#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+/*小图标*/
+.J_event > a > i{
+    font-family: "icomoon";
+    /*子绝对定位,  加了定位所以disp就无需使用了*/
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 0;
+    color: pink;
+    font-style: normal;
+}
+/*头部结束*/
